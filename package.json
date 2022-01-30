@@ -1,7 +1,7 @@
 {
   "name": "frontend-project-lvl1",
   "version": "1.0.0",
-  "type" :"module",
+  "type": "module",
   "description": "[![Actions Status](https://github.com/jennysgod/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/jennysgod/frontend-project-lvl1/actions)",
   "main": "index.js",
   "bin": {
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/jennysgod/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/jennysgod/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/jennysgod/frontend-project-lvl1#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
