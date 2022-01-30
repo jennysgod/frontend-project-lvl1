@@ -3,4 +3,4 @@
 
 <a href="https://codeclimate.com/github/jennysgod/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/fa93e729ffeb2eb79260/maintainability" /></a>
 
-![Linter Status](https://github.com/jennysgod/frontend-project-lvl1/blob/main/.github/workflows/linter/badge.svg)
+<a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" /></a>
