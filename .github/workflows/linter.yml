@@ -8,6 +8,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Run linter
-        run: make lint
+  steps:
+    - uses: actions/checkout@v2
+    - name: npm install
+      run: 
+        make install
+    - name: Run Linter
+      run: 
+        make lint
