@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
   steps:
-    - uses: actions/checkout@v2
     - name: npm install
       run: 
         make install
