@@ -7,3 +7,6 @@
 
 ### Консольная игра "Определение четного числа":
 <a href="https://asciinema.org/a/UDpprhAEZWur8ZKyQWImi7PpT" target="_blank"><img src="https://asciinema.org/a/UDpprhAEZWur8ZKyQWImi7PpT.svg" /></a>
+
+### Консольная игра "Калькулятор (сложение/вычитание/умножение)":
+<a href="https://asciinema.org/a/466984" target="_blank"><img src="https://asciinema.org/a/466984.svg" /></a>
