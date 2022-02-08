@@ -10,3 +10,6 @@
 
 ### Консольная игра "Калькулятор (сложение/вычитание/умножение)":
 <a href="https://asciinema.org/a/466984" target="_blank"><img src="https://asciinema.org/a/466984.svg" /></a>
+
+### Консольная игра "Наибольший общий делитель":
+<a href="https://asciinema.org/a/467502" target="_blank"><img src="https://asciinema.org/a/467502.svg" /></a>
