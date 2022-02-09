@@ -1,35 +1,33 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import randomNum from '../src/math.js';
+import randomNum from '../../src/math.js';
 
-function calcGame() {
+function progressionGame() {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName} !`);
   const maxRounds = 3;
-  const rule = 'What is the result of the expression?';
+  const rule = 'What number is missing in the progression?';
   console.log(`${rule}`);
   let res = 0;
-  const calc = (num1, num2, randomSym) => {
-    let calcRes;
-    if (randomSym === '+') {
-      calcRes = num1 + num2;
-    }
-    if (randomSym === '-') {
-      calcRes = (num1 - num2);
-    }
-    if (randomSym === '*') {
-      calcRes = (num1 * num2);
-    }
-    return calcRes;
-  };
   while (res !== maxRounds) {
-    const num1 = randomNum();
-    const num2 = randomNum();
-    const sym = ['+', '-', '*'];
-    const randomSym = sym[Math.floor(Math.random() * sym.length)];
-    const question = `${num1} ${randomSym} ${num2}`;
-    const rightAnswer = String(calc(num1, num2, randomSym));
+    let num = randomNum(1, 20);
+    let prog = '';
+    const progStep = randomNum(1, 10);
+    const progLength = randomNum(5, 10);
+    const randomIndex = randomNum(1, progLength);
+    let rightAnswer;
+    for (let i = 1; i <= progLength; i += 1) {
+      if (i === randomIndex) {
+        rightAnswer = String(num + progStep);
+        num += progStep;
+        prog += ' ..';
+      } else {
+        num += progStep;
+        prog += ` ${num}`;
+      }
+    }
+    const question = prog;
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === rightAnswer) {
@@ -43,4 +41,4 @@ function calcGame() {
   }
   console.log(`Congratulations, ${userName}!`);
 }
-calcGame();
+progressionGame();

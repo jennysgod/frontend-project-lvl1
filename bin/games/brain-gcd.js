@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import randomNum from '../src/math.js';
+import randomNum from '../../src/math.js';
 
 function gcdGame() {
   console.log('Welcome to the Brain Games!');
