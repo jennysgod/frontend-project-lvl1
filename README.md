@@ -13,3 +13,6 @@
 
 ### Консольная игра "Наибольший общий делитель":
 <a href="https://asciinema.org/a/467502" target="_blank"><img src="https://asciinema.org/a/467502.svg" /></a>
+
+### Консольная игра "Арифметическая прогрессия":
+<a href="https://asciinema.org/a/467859" target="_blank"><img src="https://asciinema.org/a/467859.svg" /></a>
