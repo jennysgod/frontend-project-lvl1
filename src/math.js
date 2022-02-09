@@ -1,5 +1,3 @@
-function randomNum(min = 0, max = 100) {
-  const random = min + Math.random() * (max - min) + min;
-  return Math.floor(random);
+export default function randomNum(min = 0, max = 100) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-export default randomNum;
