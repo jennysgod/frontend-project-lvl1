@@ -16,3 +16,6 @@
 
 ### Консольная игра "Арифметическая прогрессия":
 <a href="https://asciinema.org/a/467859" target="_blank"><img src="https://asciinema.org/a/467859.svg" /></a>
+
+### Консольная игра "Простое ли число?":
+<a href="https://asciinema.org/a/467867" target="_blank"><img src="https://asciinema.org/a/467867.svg" /></a>
