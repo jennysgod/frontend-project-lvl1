@@ -7,17 +7,20 @@ export default function gameEngine(rule, question, rightAnswer) {
   const maxRounds = 3;
   console.log(`${rule}`);
   let res = 0;
-  while (res !== maxRounds) {
-    console.log(`Question: ${question}`);
-    const answer = readlineSync.question('Your answer: ');
-    if (answer.toLowerCase() === rightAnswer) {
-      console.log('Correct!');
-      res += 1;
+  const getRightAnswer = (x = question) => {
+    while (res !== maxRounds) {
+      console.log(`${x}`);
+      const answer = readlineSync.question('Your answer: ');
+      if (answer === rightAnswer) {
+        console.log('Correct!');
+        res += 1;
+      }
+      if (answer !== rightAnswer) {
+        console.log(`${answer} is wrong answer ;(. Correct answer was ${rightAnswer}. \nLet's try again, ${userName}!`);
+        return;
+      }
     }
-    if (answer.toLowerCase() !== rightAnswer) {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${rightAnswer}. \nLet's try again, ${userName}!`);
-      return;
-    }
-  }
+  };
+  getRightAnswer();
   console.log(`Congratulations, ${userName}!`);
 }
