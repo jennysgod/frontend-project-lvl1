@@ -14,10 +14,10 @@ function progressionGame() {
     let num = randomNum(1, 20);
     let prog = '';
     const progStep = randomNum(1, 10);
-    const progLength = randomNum(6, 11);
+    const progLength = randomNum(5, 10);
     const randomIndex = randomNum(1, progLength);
     let rightAnswer;
-    for (let i = 1; i <= progLength; i += 1) {
+    for (let i = 0; i <= progLength; i += 1) {
       if (i === randomIndex) {
         rightAnswer = String(num + progStep);
         num += progStep;
