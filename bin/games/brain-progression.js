@@ -27,8 +27,8 @@ function progressionGame() {
         prog += ` ${num}`;
       }
     }
-    const question = prog;
-    console.log(`Question: ${question}`);
+    const question = `Question: ${prog}`;
+    console.log(question);
     const answer = readlineSync.question('Your answer: ');
     if (answer === rightAnswer) {
       console.log('Correct!');
