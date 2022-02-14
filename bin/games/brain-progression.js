@@ -12,7 +12,7 @@ function progressionGame() {
   let res = 0;
   while (res !== maxRounds) {
     let num = randomNum(1, 20);
-    let question = '';
+    let prog = '';
     const progStep = randomNum(1, 10);
     const progLength = randomNum(5, 10);
     const randomIndex = randomNum(1, progLength);
@@ -21,13 +21,14 @@ function progressionGame() {
       if (i === randomIndex) {
         rightAnswer = String(num + progStep);
         num += progStep;
-        question += ' ..';
+        prog += ' ..';
       } else {
         num += progStep;
-        question += ` ${num}`;
+        prog += ` ${num}`;
       }
     }
-    console.log(`Question: ${question}`);
+    const question = prog;
+    console.log(`Question:${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === rightAnswer) {
       console.log('Correct!');
