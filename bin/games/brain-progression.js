@@ -22,13 +22,16 @@ function progressionGame() {
         rightAnswer = String(num + progStep);
         num += progStep;
         prog += ' ..';
+      }
+      if (i === 0) {
+        prog = num;
       } else {
         num += progStep;
         prog += ` ${num}`;
       }
     }
     const question = prog;
-    console.log(`Question:${question}`);
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === rightAnswer) {
       console.log('Correct!');
