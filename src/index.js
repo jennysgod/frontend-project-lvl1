@@ -9,7 +9,7 @@ export default function gameEngine(rule, game) {
   let res = 0;
   while (res !== maxRounds) {
     const [question, rightAnswer] = game();
-    console.log(`${question}`);
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === rightAnswer) {
       console.log('Correct!');
